@@ -1,0 +1,592 @@
+﻿<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+  <meta charset="utf-8">
+  <title>寄忆-时间带不走的回忆</title>
+  <meta name="description" content="">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png">
+  <link rel="shortcut icon" sizes="196x196" href="img/touch/touch-icon-196x196.png">
+  <link rel="shortcut icon" href="img/touch/apple-touch-icon.png">
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
+  <meta name="msapplication-TileColor" content="#222222">
+
+  <!-- Reset browser default CSS -->
+  <link href="css/reset.css" type="text/css" rel="stylesheet" />
+
+  <!-- Core Files -->
+  <script src="js/vendor/jquery-2.1.0.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js" type="text/javascript"></script>
+  <script src="js/vendor/material.min.js"></script>
+
+  <!-- Plugin for Select Form control, full documentation here: https://github.com/FezVrasta/dropdown.js -->
+  <script src="js/vendor/jquery.dropdown.js" type="text/javascript"></script>
+  <!-- Plugin for Tags, full documentation here: http://xoxco.com/projects/code/tagsinput/  -->
+  <script src="js/vendor/jquery.tagsinput.js"></script>
+  <!-- Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+  <script src="js/vendor/jasny-bootstrap.min.js"></script>
+
+  <script src="js/vendor/material-kit.js" type="text/javascript"></script>
+
+  <!-- Side Navigation JS -->
+  <script type="text/javascript" src="js/vendor/sidenav.js"></script>
+
+  <!-- External Resources -->
+  <script type="text/javascript" src="js/vendor/swiper.jquery.min.js"></script>
+  <script type="text/javascript" src="js/vendor/chart.min.js"></script>
+  <script type="text/javascript" src="js/vendor/headsup.js"></script>
+  <script type="text/javascript" src="js/vendor/jquery.mixitup.min.js"></script>
+  <script type="text/javascript" src="js/vendor/jquery.swipebox.min.js"></script>
+  <script type="text/javascript" src="js/vendor/masonry.min.js"></script>
+
+  <!-- Custom Javascript File -->
+  <script src="js/main.js"></script>
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Slab%7CMaterial+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
+  <!-- CSS Files -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/material-kit.css" rel="stylesheet" />
+  <link href="css/swiper.min.css" rel="stylesheet" />
+  <link href="css/swipebox.min.css" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet" />
+
+  <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+  <!-- Google Analytics -->
+  <script>
+
+
+
+
+
+
+  </script>
+</head>
+
+<body>
+
+  <!-- Toolbar -->
+  <div id="toolbar" class="black">
+    <div class="open-left">
+      <button type="button" class="button-collapse navbar-toggle collapsed" data-activates="slide-out"> <span
+          class="sr-only">Toggle navigation</span> <span class="icon-bar white"></span> <span
+          class="icon-bar white"></span> <span class="icon-bar white"></span> </button>
+    </div>
+    <h1 class="branding">寄忆</h1>
+    <div style="padding-bottom: 10px;"> <a href="login.html"> <i class="material-icons">face</i> </a> </div>
+    <div class="open-right" data-activates="slide-out-right"> <i class="material-icons">rss_feed</i> </div>
+  </div>
+  <!-- End of Toolbar -->
+
+  <!-- Left Sidebar -->
+  <div id="slide-out" class="side-nav">
+
+    <div class="card side-nav-card">
+      <div class="content" style="background:#cba7f9;">
+        <div class="footer">
+          <div class="author">
+            <a href="#!">
+              <img src="img/head/baozi.jpg" alt="..." class="avatar img-raised">
+              <span class="info-title text-primary">包子</span><br><br>
+              <span class="text-primary"><strong class="text-primary">id: </strong>12345678910</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel">
+        <div class="panel-heading">
+          <h4 class="panel-title"><a href="index.html">首页</a></h4>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-heading">
+          <h4 class="panel-title"><a href="profile.html">个人中心</a></h4>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingFour">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour"
+            aria-expanded="false" aria-controls="collapseTwo">
+            <h4 class="panel-title">创造所<i class="material-icons">keyboard_arrow_down</i></h4>
+          </a>
+        </div>
+        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+          <div class="panel-body">
+            <ul>
+              <li><a href="add_enterpot.html">创建仓库</a></li>
+              <li><a href="add_article.html">创建匣子</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-heading">
+          <h4 class="panel-title"><a href="mark_enterpot.html">加入的仓库</a></h4>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-heading">
+          <h4 class="panel-title"><a href="mark_article.html">标记的匣子</a></h4>
+        </div>
+      </div>
+
+
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingThree">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"
+            aria-expanded="false" aria-controls="collapseThree">
+            <h4 class="panel-title">商城<i class="material-icons">keyboard_arrow_down</i></h4>
+          </a>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body">
+            <ul>
+              <li><a href="#">商城(未开放，期待一下鸭！)</a></li>
+              <li><a href="#">购物车</a></li>
+              <li><a href="#">我的订单</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="panel">
+        <div class="panel-heading">
+          <h4 class="panel-title"><a href="contact.html">关于我们</a></h4>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-heading">
+          <h4 class="panel-title"><a href="#s">待定...</a></h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Right Sidebar -->
+  <div id="slide-out-right" class="side-nav">
+    <div class="card">
+      <div class="content content-info">
+        <h5 class="category-social"> <i class="fa fa-cubes"></i> 仓库 </h5>
+        <h4 class="card-title"> <a href="#!">谈谈你的吸花之路的趣事吧！</a> </h4>
+        <div class="footer">
+          <div class="author"> <a href="#!"> <img src="img/faces/avatar.jpg" alt="..." class="avatar img-raised">
+              <span>包子</span> </a> </div>
+          <div class="stats"> <i class="material-icons">favorite</i> 2.4K · <i class="material-icons">share</i> 45
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content content-info">
+        <h5 class="category-social"> <i class="fa fa-cubes"></i> 仓库 </h5>
+        <h4 class="card-title"> <a href="#!">谈谈你的吸花之路的趣事吧！</a> </h4>
+        <div class="footer">
+          <div class="author"> <a href="#!"> <img src="img/faces/avatar.jpg" alt="..." class="avatar img-raised">
+              <span>包子</span> </a> </div>
+          <div class="stats"> <i class="material-icons">favorite</i> 2.4K · <i class="material-icons">share</i> 45
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content content-info">
+        <h5 class="category-social"> <i class="fa fa-cubes"></i> 仓库 </h5>
+        <h4 class="card-title"> <a href="#!">谈谈你的吸花之路的趣事吧！</a> </h4>
+        <div class="footer">
+          <div class="author"> <a href="#!"> <img src="img/faces/avatar.jpg" alt="..." class="avatar img-raised">
+              <span>包子</span> </a> </div>
+          <div class="stats"> <i class="material-icons">favorite</i> 2.4K · <i class="material-icons">share</i> 45
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content content-info">
+        <h5 class="category-social"> <i class="fa fa-cubes"></i> 仓库 </h5>
+        <h4 class="card-title"> <a href="#!">谈谈你的吸花之路的趣事吧！</a> </h4>
+        <div class="footer">
+          <div class="author"> <a href="#!"> <img src="img/faces/avatar.jpg" alt="..." class="avatar img-raised">
+              <span>包子</span> </a> </div>
+          <div class="stats"> <i class="material-icons">favorite</i> 2.4K · <i class="material-icons">share</i> 45
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content content-info">
+        <h5 class="category-social"> <i class="fa fa-cubes"></i> 仓库 </h5>
+        <h4 class="card-title"> <a href="#!">谈谈你的吸花之路的趣事吧！</a> </h4>
+        <div class="footer">
+          <div class="author"> <a href="#!"> <img src="img/faces/avatar.jpg" alt="..." class="avatar img-raised">
+              <span>包子</span> </a> </div>
+          <div class="stats"> <i class="material-icons">favorite</i> 2.4K · <i class="material-icons">share</i> 45
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Main container have some space on top, so your toolbar will not cover the page contents -->
+  <div id="main">
+
+    <!-- Page Header -->
+    <div class="page-header profile-header header-filter bg5" data-parallax="active">
+    </div>
+    <!-- End of Page Header -->
+
+    <div id="reading" class="content blog-post">
+      <div class="main main-raised m-b-40">
+
+        <div class="profile-content profile-page">
+          <div class="container">
+
+            <div class="row">
+              <div class="col-xs-6 col-xs-offset-3">
+                <div class="profile">
+                  <div class="avatar">
+                    <img src="img/head/微信图片_20190319160545.jpg" alt="Circle Image"
+                      class="img-circle img-responsive img-raised">
+                  </div>
+                  <div class="name">
+                    <h3 class="title">苦艾酒</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-2 follow">
+                <button class="btn btn-fab btn-primary" rel="tooltip" title="关注这个作者">
+                  <i class="material-icons">add</i>
+                </button>
+              </div>
+            </div>
+            <div class="description text-center">
+              <p>云中白鹤寄锦书，似水流年忆超越 </p>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3">
+                <div class="profile-tabs">
+                  <div class="nav-align-center">
+                    <ul class="nav nav-pills nav-pills-icons" role="tablist">
+                      <li class="active">
+                        <a href="#enterpot" role="tab" data-toggle="tab">
+                          <i class="fa fa-cubes"></i>
+                          仓库
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#article" role="tab" data-toggle="tab">
+                          <i class="fa fa-cube"></i>
+                          匣子
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#timeshow" role="tab" data-toggle="tab">
+                          <i class="fa fa-archive"></i>
+                          回忆录
+                        </a>
+                      </li>
+                    </ul>
+
+
+                  </div>
+                </div>
+                <!-- End Profile Tabs -->
+              </div>
+            </div>
+            <div class="tab-content">
+              <div class="tab-pane active work" id="enterpot">
+                <div class="row">
+                  <div class="col-md-7 col-md-offset-1">
+                    <div class="row collections">
+                      <div class="col-md-6">
+                        <div class="card">
+                          <div class="content content-first">
+                            <h5 class="category-social"> <i class="fa fa-cubes"></i> 仓库 </h5>
+                            <h4 class="card-title"> <a href="enterpot.html">谈谈你的吸花之路的趣事吧！</a> </h4>
+                            <div class="footer">
+                              <div class="author"> <a href="#!"> <img src="img/faces/avatar.jpg" alt="..."
+                                    class="avatar img-raised">
+                                  <span>包子</span> </a> </div>
+                              <div class="stats"> <i class="material-icons">favorite</i> 2.4K · <i
+                                  class="material-icons">share</i> 45
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card">
+                          <div class="content content-first">
+                            <h5 class="category-social"> <i class="fa fa-cubes"></i> 仓库 </h5>
+                            <h4 class="card-title"> <a href="enterpot.html">谈谈你的吸花之路的趣事吧！</a> </h4>
+                            <div class="footer">
+                              <div class="author"> <a href="#!"> <img src="img/faces/avatar.jpg" alt="..."
+                                    class="avatar img-raised">
+                                  <span>包子</span> </a> </div>
+                              <div class="stats"> <i class="material-icons">favorite</i> 2.4K · <i
+                                  class="material-icons">share</i> 45
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card">
+                          <div class="content content-first">
+                            <h5 class="category-social"> <i class="fa fa-cubes"></i> 仓库 </h5>
+                            <h4 class="card-title"> <a href="enterpot.html">谈谈你的吸花之路的趣事吧！</a> </h4>
+                            <div class="footer">
+                              <div class="author"> <a href="#!"> <img src="img/faces/avatar.jpg" alt="..."
+                                    class="avatar img-raised">
+                                  <span>包子</span> </a> </div>
+                              <div class="stats"> <i class="material-icons">favorite</i> 2.4K · <i
+                                  class="material-icons">share</i> 45
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-2 col-md-offset-1 stats">
+                    <h4 class="title">仓库信息</h4>
+                    <ul class="list-unstyled">
+                      <li><b>60</b>匣子</li>
+                      <li><b>4</b>收藏</li>
+                      <li><b>1.2K</b>点赞</li>
+                      <li><small>创建于2019年03月04号</small></li>
+                    </ul>
+                    <hr />
+                    <h4 class="title">关于仓库的信息</h4>
+                    <p class="description">
+                      关于吸花路上的那些趣事！
+                    </p>
+                    <hr />
+                    <h4 class="title">标签</h4>
+                    <span class="label label-primary">娱乐</span>
+                    <span class="label label-rose">明星</span>
+                  </div>
+                </div>
+                <!--- pages number -->
+                <div class="col-sm-12">
+                  <ul class="pagination pagination-primary">
+                    <li class="active"><a href="javascript:void(0);">1</a></li>
+                    <li><a href="javascript:void(0);">2</a></li>
+                    <li><a href="javascript:void(0);">3</a></li>
+                    <li><a href="javascript:void(0);">4</a></li>
+                    <li><a href="javascript:void(0);">...</a></li>
+                    <li><a href="javascript:void(0);">9</a></li>
+                  </ul>
+                </div>
+                <!-- End of pages number -->
+              </div>
+              <div class="tab-pane connections" id="article">
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="card card-blog">
+                      <div class="card-image"> <a href="article.html"> <img class="img"
+                            src="img/5413ec67ebd6989afc4391cd3b00f070.jpeg" alt="" /> </a> </div>
+                      <div class="content">
+                        <h4 class="card-title"> <a href="article.html">关于吸花的心路历程</a> </h4>
+                        <p class="card-description"> 啦啦啦啦啦认识超越第一次是在创造101的舞台上.... </p>
+                        <div class="footer">
+                          <div class="author"> <a href="article.html"> <img src="img/faces/marc.jpg" alt="..."
+                                class="avatar img-raised"> <span>包子</span> </a> </div>
+                          <div class="stats"> <i class="material-icons">schedule</i> 5 min read </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="card card-blog">
+                      <div class="content">
+                        <h4 class="card-title"> <a href="article.html">关于吸花的心路历程</a> </h4>
+                        <p class="card-description"> 啦啦啦啦啦认识超越第一次是在创造101的舞台上.... </p>
+                        <div class="footer">
+                          <div class="author"> <a href="article.html"> <img src="img/faces/marc.jpg" alt="..."
+                                class="avatar img-raised"> <span>包子</span> </a> </div>
+                          <div class="stats"> <i class="material-icons">schedule</i> 5 min read </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card card-blog">
+                      <div class="card-image"> <a href="article.html"> <img class="img"
+                            src="img/5413ec67ebd6989afc4391cd3b00f070.jpeg" alt="" /> </a> </div>
+                      <div class="content">
+                        <h4 class="card-title"> <a href="article.html">关于吸花的心路历程</a> </h4>
+                        <p class="card-description"> 啦啦啦啦啦认识超越第一次是在创造101的舞台上.... </p>
+                        <div class="footer">
+                          <div class="author"> <a href="article.html"> <img src="img/faces/marc.jpg" alt="..."
+                                class="avatar img-raised"> <span>包子</span> </a> </div>
+                          <div class="stats"> <i class="material-icons">schedule</i> 5 min read </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <div class="card card-blog">
+                      <div class="content">
+                        <h4 class="card-title"> <a href="article.html">关于吸花的心路历程</a> </h4>
+                        <p class="card-description"> 啦啦啦啦啦认识超越第一次是在创造101的舞台上.... </p>
+                        <div class="footer">
+                          <div class="author"> <a href="article.html"> <img src="img/faces/marc.jpg" alt="..."
+                                class="avatar img-raised"> <span>包子</span> </a> </div>
+                          <div class="stats"> <i class="material-icons">schedule</i> 5 min read </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-sm-12">
+                  <a class="btn btn-primary" href="myarticle.html" style="float:right;">查看更多</a>
+                </div>
+              </div>
+              <div class="tab-pane work" id="timeshow">
+                <div class="row">
+                  <div class="col-md-7 col-md-offset-1">
+                    <div class="row collections">
+                      <div class="col-md-6">
+                        <div class="card card-background bgc1">
+                          <a href="#!"></a>
+                          <div class="content">
+                            <label class="label label-primary">2019年03月</label>
+                            <a href="timeline.html">
+                              <h2 class="card-title">开始吸花之路鸭</h2>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card card-background bgc4">
+                          <a href="#!"></a>
+                          <div class="content">
+                            <label class="label label-primary">2019年04月</label>
+                            <a href="timeline.html">
+                              <h2 class="card-title">开始吸花之路鸭</h2>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card card-background bgc5">
+                          <a href="#!"></a>
+                          <div class="content">
+                            <label class="label label-primary">2019年05月</label>
+                            <a href="timeline.html">
+                              <h2 class="card-title">开始吸花之路鸭</h2>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-2 col-md-offset-1 stats m-t-40">
+                    <h4 class="title">时间轴记录</h4>
+                    <hr />
+                    <ul class="list-unstyled">
+                      <li><b>20</b>匣子</li>
+                      <li><b>4</b>仓库</li>
+                      <li><b>2.4K</b>点赞</li>
+                      <li><b>1.0K</b>收藏</li>
+                      <li><b>200</b>评论</li>
+                    </ul>
+                    <hr />
+                  </div>
+                </div>
+                <!--- pages number -->
+                <div class="col-sm-12">
+                  <ul class="pagination pagination-primary">
+                    <li class="active"><a href="javascript:void(0);">1</a></li>
+                    <li><a href="javascript:void(0);">2</a></li>
+                    <li><a href="javascript:void(0);">3</a></li>
+                    <li><a href="javascript:void(0);">4</a></li>
+                    <li><a href="javascript:void(0);">...</a></li>
+                    <li><a href="javascript:void(0);">9</a></li>
+                  </ul>
+                </div>
+                <!-- End of pages number -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer footer-black footer-big">
+    <div class="container-fluid">
+      <div class="content">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>About Us</h5>
+            <p>关于【寄·忆】不仅仅是捕捉电光火石的思维的仓库，也是对未来的寄予、对过去的思忆。对超越的喜爱陪伴着我们的过去与未来，鼓励着我们不断超越。云中白鹤寄锦书，忆起流年自超越。 </p>
+            <p>Sending memories is not only a warehouse for catching the thought of flint, but also a place for the
+              future and a memory of the past. The love of transcendence accompanies our past and future, and
+              encourages us to transcend constantly. The white crane in the clouds sends brocade books, recalling the
+              past years since surpassing.</p>
+          </div>
+          <div class="col-md-4">
+            <h5>联系方式</h5>
+            <div class="social-feed">
+              <div class="feed-line"> <i class="fa fa-weixin"></i>
+                <p>keaideduolabaobei</p>
+              </div>
+              <div class="feed-line"> <i class="fa fa-qq"></i>
+                <p>2205753065.</p>
+              </div>
+              <div class="feed-line"> <i class="fa fa-phone-square"></i>
+                <p>12345678</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h5>做啥都队-成员</h5>
+            <div class="gallery-feed"> <img src="img/head/微信图片_20190319160441.jpg" class="img img-raised img-rounded"
+                alt="" /> <img src="img/head/baozi.jpg" class="img img-raised img-rounded" alt="" /> <img
+                src="img/head/微信图片_20190319160507.jpg" class="img img-raised img-rounded" alt="" /> <img
+                src="img/head/微信图片_20190319160523.jpg" class="img img-raised img-rounded" alt="" /> <img
+                src="img/head/微信图片_20190319160536.jpg" class="img img-raised img-rounded" alt="" /> <img
+                src="img/head/微信图片_20190319160552.jpg" class="img img-raised img-rounded" alt="" /> <img
+                src="img/head/微信图片_20190319160545.jpg" class="img img-raised img-rounded" alt="" /> <img
+                src="img/head/微信图片_20190319160602.jpg" class="img img-raised img-rounded" alt="" /> <img
+                src="img/head/微信图片_20190319160618.jpg" class="img img-raised img-rounded" alt="" /> <img
+                src="img/head/微信图片_20190319160626.jpg" class="img img-raised img-rounded" alt="" /> <img
+                src="img/head/微信图片_20190319160638.jpg" class="img img-raised img-rounded" alt="" /> <img
+                src="img/head/微信图片_20190319160646.jpg" class="img img-raised img-rounded" alt="" /> </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </div>
+  </footer>
+  </div> <!-- End of Main -->
+
+
+</body>
+
+</html>

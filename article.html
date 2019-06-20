@@ -1,0 +1,634 @@
+﻿<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+  <meta charset="utf-8">
+  <title>寄忆--记录与爱豆的每一天</title>
+  <meta name="description" content="">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
+  <meta name="msapplication-TileColor" content="#222222">
+
+  <!-- Reset browser default CSS -->
+  <link href="css/reset.css" type="text/css" rel="stylesheet" />
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Slab%7CMaterial+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
+  <!-- CSS Files -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/material-kit.css" rel="stylesheet" />
+  <link href="css/swiper.min.css" rel="stylesheet" />
+  <link href="css/swipebox.min.css" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet" />
+
+
+  <!-- Google Analytics -->
+  <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+  <!-- Core Files -->
+  <script src="js/vendor/jquery-2.1.0.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js" type="text/javascript"></script>
+  <script src="js/vendor/material.min.js"></script>
+
+  <!-- Plugin for Select Form control, full documentation here: https://github.com/FezVrasta/dropdown.js -->
+  <script src="js/vendor/jquery.dropdown.js" type="text/javascript"></script>
+  <!-- Plugin for Tags, full documentation here: http://xoxco.com/projects/code/tagsinput/  -->
+  <script src="js/vendor/jquery.tagsinput.js"></script>
+  <!-- Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+  <script src="js/vendor/jasny-bootstrap.min.js"></script>
+  <script src="js/vendor/material-kit.js" type="text/javascript"></script>
+
+  <!-- Side Navigation JS -->
+  <script type="text/javascript" src="js/vendor/sidenav.js"></script>
+
+  <!-- Custom Javascript File -->
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+
+
+  <!-- Toolbar -->
+  <div id="toolbar" class="black">
+    <div class="open-left">
+      <button type="button" class="button-collapse navbar-toggle collapsed" data-activates="slide-out">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar white"></span>
+        <span class="icon-bar white"></span>
+        <span class="icon-bar white"></span>
+      </button>
+    </div>
+
+    <h1 class="branding">寄忆</h1>
+    <div style="padding-bottom: 10px;">
+      <a href="login.html">
+        <i class="material-icons">face</i>
+      </a>
+    </div>
+    <div class="open-right" data-activates="slide-out-right">
+      <i class="material-icons">rss_feed</i>
+    </div>
+  </div>
+  <!-- End of Toolbar -->
+
+  <!-- Left Sidebar -->
+  <div id="slide-out" class="side-nav">
+
+    <div class="card side-nav-card">
+      <div class="content" style="background:#cba7f9;">
+        <div class="footer">
+          <div class="author">
+            <a href="#!">
+              <img src="img/head/baozi.jpg" alt="..." class="avatar img-raised">
+              <span class="info-title text-primary">包子</span><br><br>
+              <span class="text-primary"><strong class="text-primary">id: </strong>12345678910</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel">
+        <div class="panel-heading">
+          <h4 class="panel-title"><a href="index.html">首页</a></h4>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-heading">
+          <h4 class="panel-title"><a href="profile.html">个人中心</a></h4>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingFour">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour"
+            aria-expanded="false" aria-controls="collapseTwo">
+            <h4 class="panel-title">创造所<i class="material-icons">keyboard_arrow_down</i></h4>
+          </a>
+        </div>
+        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+          <div class="panel-body">
+            <ul>
+              <li><a href="add_enterpot.html">创建仓库</a></li>
+              <li><a href="add_article.html">创建匣子</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-heading">
+          <h4 class="panel-title"><a href="mark_enterpot.html">加入的仓库</a></h4>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-heading">
+          <h4 class="panel-title"><a href="mark_article.html">标记的匣子</a></h4>
+        </div>
+      </div>
+
+
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingThree">
+          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"
+            aria-expanded="false" aria-controls="collapseThree">
+            <h4 class="panel-title">商城<i class="material-icons">keyboard_arrow_down</i></h4>
+          </a>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body">
+            <ul>
+              <li><a href="#">商城(未开放，期待一下鸭！)</a></li>
+              <li><a href="#">购物车</a></li>
+              <li><a href="#">我的订单</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="panel">
+        <div class="panel-heading">
+          <h4 class="panel-title"><a href="contact.html">关于我们</a></h4>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-heading">
+          <h4 class="panel-title"><a href="#s">待定...</a></h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right Sidebar -->
+  <div id="slide-out-right" class="side-nav">
+    <div class="card">
+      <div class="content content-info">
+        <h5 class="category-social">
+          <i class="fa fa-cubes"></i> 仓库
+        </h5>
+        <h4 class="card-title">
+          <a href="#!">谈谈你的吸花之路的趣事吧！</a>
+        </h4>
+        <div class="footer">
+          <div class="author">
+            <a href="#!">
+              <img src="img/faces/avatar.jpg" alt="..." class="avatar img-raised">
+              <span>包子</span>
+            </a>
+          </div>
+          <div class="stats">
+            <i class="material-icons">favorite</i> 2.4K ·
+            <i class="material-icons">share</i> 45
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="content content-info">
+        <h5 class="category-social">
+          <i class="fa fa-cubes"></i> 仓库
+        </h5>
+        <h4 class="card-title">
+          <a href="#!">谈谈你的吸花之路的趣事吧！</a>
+        </h4>
+        <div class="footer">
+          <div class="author">
+            <a href="#!">
+              <img src="img/faces/avatar.jpg" alt="..." class="avatar img-raised">
+              <span>包子</span>
+            </a>
+          </div>
+          <div class="stats">
+            <i class="material-icons">favorite</i> 2.4K ·
+            <i class="material-icons">share</i> 45
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="content content-info">
+        <h5 class="category-social">
+          <i class="fa fa-cubes"></i> 仓库
+        </h5>
+        <h4 class="card-title">
+          <a href="#!">谈谈你的吸花之路的趣事吧！</a>
+        </h4>
+        <div class="footer">
+          <div class="author">
+            <a href="#!">
+              <img src="img/faces/avatar.jpg" alt="..." class="avatar img-raised">
+              <span>包子</span>
+            </a>
+          </div>
+          <div class="stats">
+            <i class="material-icons">favorite</i> 2.4K ·
+            <i class="material-icons">share</i> 45
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="content content-info">
+        <h5 class="category-social">
+          <i class="fa fa-cubes"></i> 仓库
+        </h5>
+        <h4 class="card-title">
+          <a href="#!">谈谈你的吸花之路的趣事吧！</a>
+        </h4>
+        <div class="footer">
+          <div class="author">
+            <a href="#!">
+              <img src="img/faces/avatar.jpg" alt="..." class="avatar img-raised">
+              <span>包子</span>
+            </a>
+          </div>
+          <div class="stats">
+            <i class="material-icons">favorite</i> 2.4K ·
+            <i class="material-icons">share</i> 45
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="content content-info">
+        <h5 class="category-social">
+          <i class="fa fa-cubes"></i> 仓库
+        </h5>
+        <h4 class="card-title">
+          <a href="#!">谈谈你的吸花之路的趣事吧！</a>
+        </h4>
+        <div class="footer">
+          <div class="author">
+            <a href="#!">
+              <img src="img/faces/avatar.jpg" alt="..." class="avatar img-raised">
+              <span>包子</span>
+            </a>
+          </div>
+          <div class="stats">
+            <i class="material-icons">favorite</i> 2.4K ·
+            <i class="material-icons">share</i> 45
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Main container have some space on top, so your toolbar will not cover the page contents -->
+  <div id="main">
+
+    <!-- Page Header -->
+    <div class="page-header valign-wrapper bg3" style="padding-top: 50px;">
+      <div class="card card-profile col-sm-offset-1">
+        <div class="row">
+          <div class="col-md-2">
+            <div class="card-avatar">
+              <a href="profile.html">
+                <img class="img" src="img/head/微信图片_20190319160552.jpg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-md-10 fontcolor">
+            <h4 class="card-title fontcolor">匣子的主人： 包子 <small class="fontcolor"
+                style="float: right;">创建于2019年3月3日</small></h4>
+            <div>
+              <p class="card-title fontcolor" style="float: left;">匣子名称：</p>
+              <p>记录与超越的每一天哇</p>
+              <p class="card-title fontcolor" style="float: left;">匣子简介：</p>
+              <p>记录与超越的每一天哇啦啦啦啦啦啦啦绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿啦啦啦啦啦啦啦</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <a href="enterpot.html" class="btn btn-rose">
+          所在仓库
+        </a>
+        <a href="add_article.html" class="btn btn-info">
+          创建匣子
+        </a>
+      </div>
+    </div>
+    <!-- End of Page Header -->
+
+    <div id="reading" class="content blog-post m-t-20">
+      <div class="main main-raised">
+
+        <div class="container">
+          <div class="section section-text">
+            <h3 class="title">The Castle Looks Different at Night...</h3>
+            <p>This is the paragraph where you can write more details about your product. Keep you user engaged by
+              providing meaningful information. Remember that by this time, the user is curious, otherwise he wouldn't
+              scroll to get here. Add a button if you want the user to see more. We are here to make life better.
+              <br /> <br />
+              And now I look and look around and there’s so many Kanyes I've been trying to figure out the bed design
+              for the master bedroom at our Hidden Hills compound... and thank you for turning my personal jean jacket
+              into a couture piece.</p>
+
+            <blockquote>
+              <p>“And thank you for turning my personal jean jacket into a couture piece.”</p>
+              <small> West, Producer.</small>
+            </blockquote>
+          </div>
+
+          <!-- Slider -->
+          <div class="swiper-container img-raised">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/超越/微信图片_20190320150740.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/超越/微信图片_20190320150720.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="img/超越/微信图片_201903201508024.jpg" alt="">
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+          <!-- End of Slider -->
+
+          <div class="section section-text">
+            <h3 class="title">Rest of the Story:</h3>
+            <p>We are here to make life better. And now I look and look around and there’s so many Kanyes I've been
+              trying to figure out the bed design for the master bedroom at our Hidden Hills compound... and thank you
+              for turning my personal jean jacket into a couture piece. <br />
+              I speak yell scream directly at the old guard on behalf of the future. daytime All respect prayers and
+              love to Phife’s family Thank you for so much inspiration. </p>
+            <p> Thank you Anna for the invite thank you to the whole Vogue team And I love you like Kanye loves Kanye
+              Pand Pand Panda I've been trying to figure out the bed design for the master bedroom at our Hidden Hills
+              compound...The Pablo pop up was almost a pop up of influence. All respect prayers and love to Phife’s
+              family Thank you for so much inspiration daytime I love this new Ferg album! The Life of Pablo is now
+              available for purchase I have a dream. Thank you to everybody who made The Life of Pablo the number 1
+              album in the world! I'm so proud of the nr #1 song in the country. Panda! Good music 2016!</p>
+            <p> I love this new Ferg album! The Life of Pablo is now available for purchase I have a dream. Thank you to
+              everybody who made The Life of Pablo the number 1 album in the world! I'm so proud of the nr #1 song in
+              the country. Panda! Good music 2016!</p>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="blog-tags">
+                  Tags:
+                  <span class="label label-primary">Photography</span>
+                  <span class="label label-primary">Stories</span>
+                  <span class="label label-primary">Castle</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="section section-blog-info m-t-10">
+            <div class="row">
+              <div class="col-md-8 col-sm-offset-2">
+
+                <div class="text-center">
+                  <a href="#!" class="btn btn-google btn-round">
+                    <i class="fa fa-weixin"></i> 232
+                  </a>
+                  <a href="#!" class="btn btn-twitter btn-round">
+                    <i class="fa fa-weibo"></i> 910
+                  </a>
+                  <a href="#!" class="btn btn-facebook btn-round">
+                    <i class="fa fa-qq"></i> 872
+                  </a>
+                </div>
+
+                <hr />
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Comments -->
+          <div class="section section-comments">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2">
+                <div class="media-area">
+                  <h3 class="title text-center">2 Comments</h3>
+                  <div class="media">
+                    <a class="pull-left" href="#!">
+                      <div class="avatar">
+                        <img class="media-object" alt="Tim Picture" src="img/head/微信图片_20190319160523.jpg">
+                      </div>
+                    </a>
+                    <div class="media-body">
+                      <h4 class="media-heading">包子<small>&middot; Yesterday</small></h4>
+
+                      <p>今天又开心的吸花一天耶！！</p>
+                      <p> </p>
+
+                      <div class="media-footer">
+                        <a href="#!" class="btn btn-primary btn-simple pull-right">
+                          <i class="material-icons">reply</i> Reply
+                        </a>
+                        <a href="#!" class="btn btn-default btn-simple pull-right">
+                          <i class="material-icons">favorite</i> 25
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <a class="pull-left" href="#!">
+                      <div class="avatar">
+                        <img class="media-object" alt="Tim Picture" src="img/head/微信图片_20190319160523.jpg">
+                      </div>
+                    </a>
+                    <div class="media-body">
+                      <h4 class="media-heading">包子<small>&middot; Yesterday</small></h4>
+
+                      <p>今天又开心的吸花一天耶！！</p>
+                      <p> </p>
+
+                      <div class="media-footer">
+                        <a href="#!" class="btn btn-primary btn-simple pull-right">
+                          <i class="material-icons">reply</i> Reply
+                        </a>
+                        <a href="#!" class="btn btn-default btn-simple pull-right">
+                          <i class="material-icons">favorite</i> 25
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End media-post -->
+                  <div class="your-comment">
+                    <h3 class="title text-center">Post your comment</h3>
+                    <div class="media media-post">
+                      <a class="pull-left author" href="#!">
+                        <div class="avatar">
+                          <img class="media-object" alt="64x64" src="img/head/微信图片_20190319160552.jpg">
+                        </div>
+                      </a>
+                      <div class="media-body">
+                        <form>
+                          <textarea class="form-control" placeholder="写点有趣的评论吧" rows="6"></textarea>
+                          <div class="media-footer">
+                            <a href="#!" class="btn btn-primary btn-round btn-wd pull-right">Post Comment</a>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End of Comments -->
+
+          </div>
+        </div>
+      </div>
+
+      <!-- End of Main -->
+
+      <div class="section">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-md-12">
+              <h2 class="title text-center">相 似 的 匣 子</h2>
+              <br />
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card card-blog">
+                    <div class="card-image">
+                      <a href="article.html">
+                        <img class="img img-raised" src="img/超越/微信图片_201903201508022.jpg" alt="" />
+                      </a>
+                    </div>
+
+                    <div class="content">
+                      <h4 class="card-title">
+                        <a href="article.html">匣子的主题</a>
+                      </h4>
+                      <p class="card-description">
+                        啦啦啦啦啦啦啦啦绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿<a href="article.html"> Read More </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="card card-blog">
+                    <div class="card-image">
+                      <a href="article.html">
+                        <img class="img img-raised" src="img/超越/微信图片_201903201508022.jpg" alt="" />
+                      </a>
+                    </div>
+
+                    <div class="content">
+                      <h4 class="card-title">
+                        <a href="article.html">匣子的主题</a>
+                      </h4>
+                      <p class="card-description">
+                        啦啦啦啦啦啦啦啦绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿<a href="article.html"> Read More </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="card card-blog">
+                    <div class="card-image">
+                      <a href="article.html">
+                        <img class="img img-raised" src="img/超越/微信图片_201903201508022.jpg" alt="" />
+                      </a>
+                    </div>
+
+                    <div class="content">
+                      <h4 class="card-title">
+                        <a href="article.html">匣子的主题</a>
+                      </h4>
+                      <p class="card-description">
+                        啦啦啦啦啦啦啦啦绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿<a href="article.html"> Read More </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer footer-black footer-big">
+      <div class="container-fluid">
+        <div class="content">
+          <div class="row">
+            <div class="col-md-4">
+              <h5>About Us</h5>
+              <p>关于【寄·忆】不仅仅是捕捉电光火石的思维的仓库，也是对未来的寄予、对过去的思忆。对超越的喜爱陪伴着我们的过去与未来，鼓励着我们不断超越。云中白鹤寄锦书，忆起流年自超越。 </p>
+              <p>Sending memories is not only a warehouse for catching the thought of flint, but also a place for the
+                future and a memory of the past. The love of transcendence accompanies our past and future, and
+                encourages us to transcend constantly. The white crane in the clouds sends brocade books, recalling the
+                past years since surpassing.</p>
+            </div>
+
+            <div class="col-md-4">
+              <h5>联系方式</h5>
+              <div class="social-feed">
+                <div class="feed-line">
+                  <i class="fa fa-weixin"></i>
+                  <p>keaideduolabaobei</p>
+                </div>
+                <div class="feed-line">
+                  <i class="fa fa-qq"></i>
+                  <p>2205753065.</p>
+                </div>
+                <div class="feed-line">
+                  <i class="fa fa-phone-square"></i>
+                  <p>12345678</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <h5>做啥都队-成员</h5>
+              <div class="gallery-feed">
+                <img src="img/head/微信图片_20190319160441.jpg" class="img img-raised img-rounded" alt="" />
+                <img src="img/head/baozi.jpg" class="img img-raised img-rounded" alt="" />
+                <img src="img/head/微信图片_20190319160507.jpg" class="img img-raised img-rounded" alt="" />
+                <img src="img/head/微信图片_20190319160523.jpg" class="img img-raised img-rounded" alt="" />
+
+                <img src="img/head/微信图片_20190319160536.jpg" class="img img-raised img-rounded" alt="" />
+                <img src="img/head/微信图片_20190319160552.jpg" class="img img-raised img-rounded" alt="" />
+                <img src="img/head/微信图片_20190319160545.jpg" class="img img-raised img-rounded" alt="" />
+                <img src="img/head/微信图片_20190319160602.jpg" class="img img-raised img-rounded" alt="" />
+
+                <img src="img/head/微信图片_20190319160618.jpg" class="img img-raised img-rounded" alt="" />
+                <img src="img/head/微信图片_20190319160626.jpg" class="img img-raised img-rounded" alt="" />
+                <img src="img/head/微信图片_20190319160638.jpg" class="img img-raised img-rounded" alt="" />
+                <img src="img/head/微信图片_20190319160646.jpg" class="img img-raised img-rounded" alt="" />
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <hr />
+      </div>
+    </footer>
+    <!-- End of Main -->
+  </div>
+</body>
+
+</html>

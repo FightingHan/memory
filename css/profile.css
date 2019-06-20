@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-image:url(../img/超越/微信图片_201903201508023.jpg);
+}
+.myWhite{
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+
+.myBlue{
+	 margin-top: 10px;
+	background:#26c6da;;
+	border-radius: 10px;
+}
+
+.myRed{
+	margin-top: 10px;
+	background-color:lightcoral;
+	border-radius: 10px;
+}
+
+.myLeft{
+	top:100px;
+	padding: 16px;
+}
